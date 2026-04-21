@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY TAILS HOME | PROFESSIONAL PET CARE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- STATIC BACKGROUND --- */
+        #slideshow-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; background-size: cover; background-position: center;
+            background-image: url('1.jpg');
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+
+        body { 
+            margin: 0; padding: 20px; font-family: 'Helvetica', sans-serif; 
+            /* Overlay is darker to protect visibility */
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+            background-attachment: fixed; display: flex; flex-direction: column; align-items: center;
+            color: white; overflow-x: hidden; min-height: 100vh;
+        }
+
+        /* --- SHINING HEADER --- */
+        .hero { text-align: center; margin-top: 40px; margin-bottom: 30px; }
+        
+        h1 { 
+            font-size: 2rem; 
+            text-transform: uppercase; 
+            margin: 0; 
+            letter-spacing: 4px; 
+            color: #fff; 
+            font-weight: 800;
+            /* The "Shining" Effect: Strong glow with a dark shadow to cut through the background */
+            text-shadow: 2px 2px 5px #000, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700, 0 0 40px #FFD700;
+        }
+        
+        .hero p { font-size: 0.9rem; color: #eee; letter-spacing: 2px; font-weight: bold; text-shadow: 1px 1px 2px #000; }
+
+        /* --- BUTTONS --- */
+        .button-stack { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 350px; margin-bottom: 40px; }
+        .btn { padding: 15px; text-decoration: none; font-size: 1rem; color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; text-align: center; transition: 0.3s; background: rgba(0,0,0,0.5); }
+        .btn:hover { background: rgba(255,255,255,0.2); border-color: white; }
+
+        /* --- SECTIONS --- */
+        .container-box { width: 90%; max-width: 600px; padding: 25px; margin: 15px 0; background: rgba(0,0,0,0.6); border-radius: 10px; border: 1px solid #444; }
+        .section-title { font-size: 1.2rem; margin-bottom: 15px; color: #FFD700; text-transform: uppercase; }
+
+        /* --- CONTENT --- */
+        .perks-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; }
+        .testimonial { font-style: italic; color: #ccc; border-left: 3px solid #FFD700; padding-left: 10px; margin: 10px 0; }
+        
+        .circle-btn { position: fixed; top: 20px; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 1000; background: rgba(0,0,0,0.6); border: 1px solid white; color: white; transition: 0.3s; }
+        #email-top { left: 20px; } #wa-top { right: 20px; }
+        .circle-btn:hover { background: white; color: #000; }
+    </style>
+</head>
+<body>
+
+    <div id="slideshow-bg"></div>
+
+    <a href="mailto:Smithjane.a.jd@gmail.com" id="email-top" class="circle-btn"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://wa.me/17579313483" id="wa-top" class="circle-btn"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <div class="hero">
+        <h1>Happy Tails Home</h1>
+        <p>ETHICAL PET ADOPTION</p>
+    </div>
+
+    <div class="button-stack">
+        <a href="gallery.html" class="btn">PET GALLERY</a>
+        <a href="care-guide.html" class="btn">CARE GUIDES</a>
+        <a href="booking.html" class="btn">BOOK A VISIT</a>
+        <a href="vets.html" class="btn">VET PARTNERS</a>
+        <a href="promise.html" class="btn">OUR PROMISE</a>
+    </div>
+
+    <div class="container-box">
+        <h2 class="section-title">Adoption Perks</h2>
+        <div class="perks-list">
+            <div><i class="fa-solid fa-check"></i> Vet Certified</div>
+            <div><i class="fa-solid fa-check"></i> Fully Vaccinated</div>
+            <div><i class="fa-solid fa-check"></i> Socialized</div>
+            <div><i class="fa-solid fa-check"></i> 24/7 Support</div>
+        </div>
+    </div>
+
+    <div class="container-box">
+        <h2 class="section-title">Featured Pet of the Week</h2>
+        <p>Meet <b>Max</b>, our energetic golden retriever mix looking for a spacious home. He loves hiking and is fully house-trained!</p>
+    </div>
+
+    <div class="container-box">
+        <h2 class="section-title">Happy Owners</h2>
+        <div class="testimonial">"The most professional adoption experience I've ever had. Highly recommend!" - Sarah J.</div>
+        <div class="testimonial">"Bruno arrived so healthy and happy. Thank you!" - David K.</div>
+    </div>
+
+    <div class="container-box">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-item"><strong>Q: Do you offer home delivery?</strong><br>Yes, we coordinate safe, climate-controlled transport.</div>
+    </div>
+
+    <footer style="margin-top: 30px; color: #555; font-size: 0.8rem; text-align: center; padding-bottom: 20px;">
+        &copy; 2026 HAPPY TAILS HOME | ETHICAL PET ADOPTION
+    </footer>
+
+</body>
+</html>
