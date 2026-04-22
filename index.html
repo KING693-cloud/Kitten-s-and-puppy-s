@@ -17,7 +17,6 @@
 
         body { 
             margin: 0; padding: 20px; font-family: 'Helvetica', sans-serif; 
-            /* Overlay is darker to protect visibility */
             background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
             background-attachment: fixed; display: flex; flex-direction: column; align-items: center;
             color: white; overflow-x: hidden; min-height: 100vh;
@@ -25,18 +24,7 @@
 
         /* --- SHINING HEADER --- */
         .hero { text-align: center; margin-top: 40px; margin-bottom: 30px; }
-        
-        h1 { 
-            font-size: 2rem; 
-            text-transform: uppercase; 
-            margin: 0; 
-            letter-spacing: 4px; 
-            color: #fff; 
-            font-weight: 800;
-            /* The "Shining" Effect: Strong glow with a dark shadow to cut through the background */
-            text-shadow: 2px 2px 5px #000, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700, 0 0 40px #FFD700;
-        }
-        
+        h1 { font-size: 2rem; text-transform: uppercase; margin: 0; letter-spacing: 4px; color: #fff; font-weight: 800; text-shadow: 2px 2px 5px #000, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700, 0 0 40px #FFD700; }
         .hero p { font-size: 0.9rem; color: #eee; letter-spacing: 2px; font-weight: bold; text-shadow: 1px 1px 2px #000; }
 
         /* --- BUTTONS --- */
@@ -48,21 +36,20 @@
         .container-box { width: 90%; max-width: 600px; padding: 25px; margin: 15px 0; background: rgba(0,0,0,0.6); border-radius: 10px; border: 1px solid #444; }
         .section-title { font-size: 1.2rem; margin-bottom: 15px; color: #FFD700; text-transform: uppercase; }
 
-        /* --- CONTENT --- */
-        .perks-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem; }
-        .testimonial { font-style: italic; color: #ccc; border-left: 3px solid #FFD700; padding-left: 10px; margin: 10px 0; }
-        
+        /* --- NAV BUTTONS --- */
         .circle-btn { position: fixed; top: 20px; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; z-index: 1000; background: rgba(0,0,0,0.6); border: 1px solid white; color: white; transition: 0.3s; }
-        #email-top { left: 20px; } #wa-top { right: 20px; }
+        #chat-top { left: 20px; } #email-top { right: 20px; }
         .circle-btn:hover { background: white; color: #000; }
+
+        .step-item { margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px; }
     </style>
 </head>
 <body>
 
     <div id="slideshow-bg"></div>
 
+    <a href="chat.html" id="chat-top" class="circle-btn"><i class="fa-solid fa-comments"></i></a>
     <a href="mailto:Smithjane.a.jd@gmail.com" id="email-top" class="circle-btn"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://wa.me/17579313483" id="wa-top" class="circle-btn"><i class="fa-brands fa-whatsapp"></i></a>
 
     <div class="hero">
         <h1>Happy Tails Home</h1>
@@ -88,8 +75,26 @@
     </div>
 
     <div class="container-box">
-        <h2 class="section-title">Featured Pet of the Week</h2>
-        <p>Meet <b>Max</b>, our energetic golden retriever mix looking for a spacious home. He loves hiking and is fully house-trained!</p>
+        <h2 class="section-title">Our Adoption Process</h2>
+        <div class="step-item"><strong>1. Inquiry:</strong> Browse our gallery and contact us via chat for real-time support.</div>
+        <div class="step-item"><strong>2. Compatibility Check:</strong> We ensure the pet's temperament matches your lifestyle.</div>
+        <div class="step-item"><strong>3. Final Health Check:</strong> Every pet receives a final clearance from our vet partners.</div>
+        <div class="step-item"><strong>4. Home Transition:</strong> We arrange safe, climate-controlled transport to your door.</div>
+    </div>
+
+    <div class="container-box">
+        <h2 class="section-title">Transport Safety Standards</h2>
+        <p>We do not use standard freight. Our transport partners utilize climate-controlled, pet-only vehicles. Each journey is GPS-monitored, and we provide real-time updates directly to your phone.</p>
+    </div>
+
+    <div class="container-box">
+        <h2 class="section-title">Vet Accreditation</h2>
+        <p>Our vet partners are top-tier specialists. We perform full genetic screening and behavioral assessments, ensuring every animal is healthy, confident, and prepared for their new home.</p>
+    </div>
+
+    <div class="container-box">
+        <h2 class="section-title">Community Impact</h2>
+        <p>For every adoption, a percentage of the proceeds goes toward funding spay/neuter clinics in our local area, helping to reduce the population of strays and keeping the pet community safer.</p>
     </div>
 
     <div class="container-box">
